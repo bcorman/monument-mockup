@@ -5,14 +5,14 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.618em;
   color: #44545E;
 }
 
 /* Fonts */
 
-a, h2, h1, h3 {
+a, h2, h1, h3, input, button {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -21,7 +21,7 @@ a, h2, h1, h3 {
 
 p, .past-issues a {
   font-family: "lato", sans-serif;
-  font-size: 1em;
+  line-height: 1.4;
   font-weight: 400;
   text-transform: none;
   margin: 1.5em 0;
@@ -36,22 +36,26 @@ p, .past-issues a {
   max-width: 100%;
 }
 
-main, .about {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 main {
+  /* border: 1px solid red; */
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   margin: 3em auto;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
+aside {
+  max-width: 27.5%;
+  margin-top: 3em;
+  margin-left: 2.5%;
+  /* border: 1px solid green; */
 }
 
-.about {
-  margin-bottom: 3em;
+main section {
+  max-width: 67.5%;
+  margin-right: 2.5%;
+  /* border: 1px solid blue; */
 }
 
 .past-issues {
@@ -86,7 +90,7 @@ a {
   color: #7B98AA;
 }
 
-a:hover,  {
+a:hover  {
   color: #44545E;
 }
 
@@ -95,6 +99,7 @@ a:hover,  {
 /* Header Styles */
 
 header {
+  margin-top: 4em;
   max-width: 100%;
   font-size: 1em;
   display: flex;
@@ -102,7 +107,14 @@ header {
   justify-content: center;
 }
 
-header nav ul {
+.sticky-nav {
+  max-width: 100%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+
+.sticky-nav ul {
   list-style-type: none;
   display: flex;
   margin: 0 10%;
@@ -111,7 +123,7 @@ header nav ul {
 
 }
 
-header li {
+.sticky-nav li {
   margin: 0.5em 1em;
 }
 
@@ -162,7 +174,45 @@ footer span {
   color: #44545E;
 }
 
+footer span:hover {
+  color: #7B98AA;
+}
+
 footer p {
   border-top: 2px solid #44545E;
   padding-top: 1.5em;
+}
+
+/* Email Submit */
+
+form {
+  margin: 0 auto;
+  max-width: 50%;
+}
+input {
+	border: 2px solid #44545E;
+	margin-bottom: 12px;
+	padding: .667em 6em;
+	outline: 0;
+
+}
+
+button {
+	cursor: pointer;
+	border: 2px solid #44545E;
+	color: #44545E;
+	padding: 10px 25.5px;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #44545E;
+  color: white;
+}
+
+/* Hamburger */
+
+.hamburger {
+  display: none;
 }
