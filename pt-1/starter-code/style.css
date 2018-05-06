@@ -1,0 +1,168 @@
+/* Universal Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.618em;
+  color: #44545E;
+}
+
+/* Fonts */
+
+a, h2, h1, h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p, .past-issues a {
+  font-family: "lato", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: none;
+  margin: 1.5em 0;
+  letter-spacing: .02em;
+}
+
+/* Layout */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+main, .about {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main {
+  margin: 3em auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  margin-bottom: 3em;
+}
+
+.past-issues {
+  margin-top: 2em;
+}
+
+.past-issues ul {
+  text-align: left;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+article {
+
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  align-self: flex-start;
+}
+
+article p {
+  width: auto;
+}
+
+/* Colors */
+
+a {
+  color: #7B98AA;
+}
+
+a:hover,  {
+  color: #44545E;
+}
+
+
+
+/* Header Styles */
+
+header {
+  max-width: 100%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 10%;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+header li {
+  margin: 0.5em 1em;
+}
+
+header div {
+  background-image: url(images/blog_header_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 4em;
+  height: 18em;
+  /* max-width: 100%;
+  height: 478px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div h1 {
+  margin: auto;
+  font-size: 2em;
+  letter-spacing: 0.8em;
+  color: white;
+}
+
+/* Main Content Styles */
+
+h2 {
+  margin-top: .5em;
+  margin-bottom: .75em;
+  font-size: 1.75em;
+}
+
+h3 {
+  margin-bottom: .5em;
+  font-size: 1.3em;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #CDF3F6;
+  text-align: center;
+}
+
+footer span {
+  padding: 2em 1em 1em;
+  font-size: 1.5em;
+  color: #44545E;
+}
+
+footer p {
+  border-top: 2px solid #44545E;
+  padding-top: 1.5em;
+}
