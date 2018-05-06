@@ -183,13 +183,47 @@ footer p {
   padding-top: 1.5em;
 }
 
+/* Comment */
+
+.comment {
+  width: 70%;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.col-half {
+  width: 48%;
+  margin: 1%;
+}
+
+textarea {
+  width: 98%;
+  display: block;
+  margin-bottom: 1%;
+  resize: none;
+}
+
+.comment button {
+  width: 98%;
+}
+
+
+
 /* Email Submit */
 
-form {
+footer form {
   margin: 0 auto;
   max-width: 50%;
 }
-input {
+footer input {
 	border: 2px solid #44545E;
 	margin-bottom: 12px;
 	padding: .667em 6em;
@@ -206,7 +240,7 @@ button {
 	transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+footer button:hover {
   background-color: #44545E;
   color: white;
 }
