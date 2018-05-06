@@ -21,6 +21,7 @@ a, h2, h1, h3, input, button {
 
 p, .past-issues a {
   font-family: "lato", sans-serif;
+  font-size: 1em;
   line-height: 1.4;
   font-weight: 400;
   text-transform: none;
@@ -223,6 +224,7 @@ footer form {
   margin: 0 auto;
   max-width: 50%;
 }
+
 footer input {
 	border: 2px solid #44545E;
 	margin-bottom: 12px;
@@ -249,4 +251,70 @@ footer button:hover {
 
 .hamburger {
   display: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 560px) {
+
+  html {
+    font size: 12px;
+  }
+
+  .sticky-nav ul {
+    display: none;
+  }
+
+  .sticky-nav {
+  display: block;
+  height: 3em;
+  max-width: 100%;
+  background-color: transparent;
+  }
+
+  header {
+    margin-top: 0;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+  }
+
+  .hamburger:hover {
+    color: black;
+    font-size: 3em;
+    transition: all .5s ease-in-out;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .comment {
+    margin-top: 0;
+  }
+
+  form > .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row input {
+    width: 98%;
+  }
+
+  footer input {
+    width: 100%;
+    padding: 0;
+  }
 }
